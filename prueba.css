@@ -1,0 +1,126 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+hr{
+    width: 500px;
+    border: 2px solid black;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #result {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+  
+    /* Se crea el cuadro */
+    width: 90px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: yellow;
+  
+    /* Se centra gracias a display flex y justify-content: center; align-items: center; */
+    display: inline-block; /* Mostrar los elementos en línea */
+  }
+  
+  #errors {
+    color: rgb(0, 0, 0);
+  
+    /* Se crea el cuadro */
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    background-color: rgb(183, 235, 255);
+  
+    /* Se centra gracias a display flex y justify-content: center; align-items: center; */
+    display: inline-block; /* Mostrar los elementos en línea */
+    margin-right: 120px;
+  }
+  
+
+#board{
+    width: 450px;
+    height: 450px;
+
+    
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile.error {
+    background-color: red;
+    animation: blink 0.5s linear;
+}
+
+@keyframes blink {
+    0% { background-color: red; }
+    50% { background-color: white; }
+    100% { background-color: red; }
+}
+
+.tile {
+    width: 48px; 
+    height: 48px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits{
+    width: 500px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.number {
+    width: 44px; 
+    height: 44px;
+    border: 1px solid black;
+    margin-left: 8px;
+
+    background-color:rgb(183, 235, 255);
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-selected 
+
+{
+    background-color: yellow;
+}
+
+.tile-start 
+{
+    background-color: rgb(183, 235, 255);
+}
+
+.horizontal-line 
+{
+    border-bottom: 1px solid black;
+}
+
+.vertical-line 
+{
+    border-right: 1px solid black;
+}
